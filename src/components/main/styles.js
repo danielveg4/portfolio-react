@@ -12,7 +12,7 @@ const StyledMainContainer = styled.div`
 	color: #2c2830;
 	margin-top: 9rem;
     align-content: center;
-    height: 70vh;
+
 `;
 
 const StyledTitleMain = styled.h2`
@@ -38,13 +38,14 @@ const StyledSubcontainerMain = styled.div`
 	gap: 5rem;
 	margin-top: 4rem;
 	gap: 14rem;
+	margin-bottom: 10rem;
 `;
 
 const StyledTextMain = styled.div`
 	border: 1.5px solid #2c2830;
 	padding: 2rem;
 	font-size: 1.1rem;
-	width: 291px;
+	width: 310px;
 	overflow: hidden;
 	transition: transform 0.3s;
 	object-fit: cover;
@@ -52,8 +53,8 @@ const StyledTextMain = styled.div`
 
 const StyledIMgContainerMain = styled.div`
 	border: 1.5px solid #2c2830;
-	width: 250px;
-	height: 250px;
+	width: 310px;
+	height: 310px;
 	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
@@ -63,8 +64,8 @@ const StyledIMgContainerMain = styled.div`
 `;
 
 const StyledImgMain = styled.img`
-	width: 250px;
-	height: 250px;
+	width: 310px;
+	height: 310px;
 `;
 
 export {
