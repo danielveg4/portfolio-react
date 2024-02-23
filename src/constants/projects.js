@@ -5,23 +5,11 @@ const Contracultura = {
     title: "Contracultura",
     live: "http://contracultura.eu/",
     code: "https://github.com/danielveg4/contracultura",
-    image: "public/assets/images/insure1.png",
-    image2: "public/assets/images/insure2.png",
-    image3: "public/assets/images/insure3.png",
-    image4: "public/assets/images/insure4.png",
+    image: "assets/images/insure1.png",
+    image2: "assets/images/insure2.png",
+    image3: "assets/images/insure3.png",
+    image4: "assets/images/insure4.png",
     active: true
-};
-
-const Easybank = {
-    id: v4(),
-    title: "Easybank",
-    live: "https://danielveg4.github.io/clipboard_landing_page/",
-    code: "https://github.com/danielveg4/clipboard_landing_page",
-    image: "public/assets/images/easy1.png",
-    image2: "public/assets/images/easy2.png",
-    image3: "public/assets/images/easy3.png",
-    image4: "public/assets/images/easy4.png",
-    active: false
 };
 
 const Reshipi = {
@@ -29,7 +17,7 @@ const Reshipi = {
     title: "Reshipi",
     live: "https://danielveg4.github.io/clipboard_landing_page/",
     code: "https://github.com/danielveg4/clipboard_landing_page",
-    image: "public/assets/images/reshipi.jpg",
+    image: "assets/images/reshipi.jpg",
     active: false
 };
 
@@ -39,6 +27,18 @@ const SpaceTourism = {
     live: "https://danielveg4.github.io/clipboard_landing_page/",
     code: "https://github.com/danielveg4/clipboard_landing_page",
     image: "public/assets/images/insure1.png",
+    active: false
+};
+
+const Easybank = {
+    id: v4(),
+    title: "Easybank",
+    live: "https://danielveg4.github.io/clipboard_landing_page/",
+    code: "https://github.com/danielveg4/clipboard_landing_page",
+    image: "assets/images/easy1.png",
+    image2: "assets/images/easy2.png",
+    image3: "assets/images/easy3.png",
+    image4: "assets/images/easy4.png",
     active: false
 };
 

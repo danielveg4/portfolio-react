@@ -2,8 +2,14 @@ import TabProject from '../../components/tabProject/TabProject';
 import {
 	StyledContainer,
 	StyledImgPrincipal,
-	StyledImgSecondary,
-	StyledImgContainer
+	StyledImgHorizontal,
+	StyledImgVertical,
+	StyledImgVertical2,
+	StyledImgContainer,
+	StyledTextContainer,
+	StyledProjectContainer,
+	StyledTextTitle,
+	StyledTextLink
 } from './styles';
 import useProjectTabs from '../../constants/useProjectTabs';
 
@@ -13,27 +19,31 @@ const Projects = ({ projects }) => {
 	return (
 		<StyledContainer>
 			<TabProject tabs={projectTabs} />
-			<StyledImgContainer>
-				<StyledImgPrincipal
-					src={activeProject.image}
-					alt={activeProject.title}
-				/>
-				<StyledImgSecondary
-					src={activeProject.image2}
-					alt={activeProject.title}
-				/>
-				<StyledImgSecondary
-					src={activeProject.image3}
-					alt={activeProject.title}
-				/>
-				<StyledImgSecondary
-					src={activeProject.image4}
-					alt={activeProject.title}
-				/>
-				<h1>{activeProject.title}</h1>
-				<p>{activeProject.live}</p>
-				<p>{activeProject.code}</p>
-			</StyledImgContainer>
+			<StyledProjectContainer>
+				<StyledImgContainer>
+					<StyledImgPrincipal
+						src={activeProject.image}
+						alt={activeProject.title}
+					/>
+					<StyledImgHorizontal
+						src={activeProject.image2}
+						alt={activeProject.title}
+					/>
+					<StyledImgVertical
+						src={activeProject.image3}
+						alt={activeProject.title}
+					/>
+					<StyledImgVertical2
+						src={activeProject.image4}
+						alt={activeProject.title}
+					/>
+				</StyledImgContainer>
+				<StyledTextContainer>
+					<StyledTextTitle>{activeProject.title}</StyledTextTitle>
+					<StyledTextLink href={activeProject.live}>Live here</StyledTextLink>
+					<StyledTextLink href={activeProject.code}>Code here</StyledTextLink>
+				</StyledTextContainer>
+			</StyledProjectContainer>
 		</StyledContainer>
 	);
 };
