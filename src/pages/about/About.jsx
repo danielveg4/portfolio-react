@@ -1,3 +1,4 @@
+import { aboutUser } from '../../constants/mainInfo';
 import {
 	StyledContainer,
 	StyledTitle,
@@ -15,16 +16,9 @@ const About = () => {
 	return (
 		<StyledContainer>
 			<StyledInfo>
-				<StyledTitle>daniel vega</StyledTitle>
-				<StyledSubTitle>web developer</StyledSubTitle>
-				<StyledText>
-					born in Santander, Im a passionate web developer based in Madrid. With
-					knowledge and expertise in web development, I specialize in creating
-					creative and functional digital solutions. Using a wide range of
-					technologies and programming languages such as CSS, JavaScript and
-					PHP, using React, Node or Laravel, I build dynamic and scalable
-					websites.
-				</StyledText>
+				<StyledTitle>{aboutUser.title}</StyledTitle>
+				<StyledSubTitle>{aboutUser.subtitle}</StyledSubTitle>
+				<StyledText>{aboutUser.text}</StyledText>
 			</StyledInfo>
 			<StyledSkills>
 				<StyledSkillsLenguages>

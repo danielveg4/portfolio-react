@@ -27,9 +27,12 @@ const Reshipi = {
 const SpaceTourism = {
     id: v4(),
     title: "Space Tourism",
-    live: "https://danielveg4.github.io/clipboard_landing_page/",
-    code: "https://github.com/danielveg4/clipboard_landing_page",
-    image: "public/assets/images/insure1.png",
+    live: "https://danielveg4.github.io/spacetourism/",
+    code: "https://github.com/danielveg4/space-tourism-react",
+    image: "assets/images/clip1.png",
+    image2: "assets/images/clip2.png",
+    image3: "assets/images/clip3.png",
+    image4: "assets/images/clip4.png",
     active: false
 };
 

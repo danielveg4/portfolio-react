@@ -36,7 +36,7 @@ export const StyledSubTitle = styled.h3`
 
 export const StyledText = styled.p`
     color: var(--principal);
-    padding-bottom: 5rem;
+    font-size: 1.1rem;
 `;
 
 export const StyledSkills = styled.div`
@@ -69,6 +69,6 @@ export const StyledTitleBotton = styled.h2`
     text-align: right;
     font-size: 3rem;
     font-weight: 900;
-    margin-top: 3.5rem;
+    margin-top: 5.5rem;
 `;
 
