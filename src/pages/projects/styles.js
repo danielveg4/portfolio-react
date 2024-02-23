@@ -83,6 +83,8 @@ export const StyledTextContainer = styled.div`
     margin-top: 3rem;
     text-align: left;
     width: 250px;
+    margin-right: -6rem;
+    margin-left: 3rem;
 `;
 
 export const StyledProjectContainer = styled.div`
@@ -98,7 +100,6 @@ export const StyledTextTitle = styled.h3`
     font-weight: 700;
     color: var(--secundary);
     margin-bottom: 1rem;
-    margin-right: -3rem;
     &:hover {
         filter: drop-shadow(0 0 15px #2c2830) hue-rotate(320deg);
     }

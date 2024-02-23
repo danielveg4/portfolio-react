@@ -15,8 +15,8 @@ const Contracultura = {
 const Reshipi = {
     id: v4(),
     title: "Reshipi",
-    live: "https://danielveg4.github.io/clipboard_landing_page/",
-    code: "https://github.com/danielveg4/clipboard_landing_page",
+    live: "https://danielveg4.github.io/reshipi/",
+    code: "https://github.com/danielveg4/recetas-cocina-reshipi",
     image: "assets/images/reshipi.jpg",
     active: false
 };
@@ -33,8 +33,8 @@ const SpaceTourism = {
 const RestApiCountries = {
     id: v4(),
     title: "Rest API Countries",
-    live: "https://danielveg4.github.io/clipboard_landing_page/",
-    code: "https://github.com/danielveg4/clipboard_landing_page",
+    live: "https://danielveg4.github.io/rest-countries/",
+    code: "https://github.com/danielveg4/rest-countries-api-with-color-theme-switcher",
     image: "assets/images/easy1.png",
     image2: "assets/images/easy2.png",
     image3: "assets/images/easy3.png",
