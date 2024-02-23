@@ -37,12 +37,13 @@ const StyledSubcontainerMain = styled.div`
 	flex-direction: row;
 	margin-top: 4rem;
 	gap: 14rem;
-	margin-bottom: 10rem;
+	margin-bottom: 9.9rem;
 `;
 
 const StyledTextMain = styled.div`
 	border: 1.5px solid #2c2830;
 	padding: 2rem;
+	margin-bottom: 1rem;
 	font-size: 1.1rem;
 	width: 310px;
 	overflow: hidden;
@@ -55,8 +56,8 @@ const StyledTextMain = styled.div`
 
 const StyledIMgContainerMain = styled.div`
 	border: 1.5px solid #2c2830;
-	width: 310px;
-	height: 310px;
+	width: 305px;
+	height: 305px;
 	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
@@ -69,8 +70,8 @@ const StyledIMgContainerMain = styled.div`
 `;
 
 const StyledImgMain = styled.img`
-	width: 310px;
-	height: 310px;
+	width: 305px;
+	height: 305px;
 	filter: drop-shadow(0 0 8px #2c2830) hue-rotate(320deg);
 	overflow: hidden;
     transition: transform 0.3s;
