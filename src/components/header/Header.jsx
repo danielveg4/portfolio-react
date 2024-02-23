@@ -1,11 +1,20 @@
 import Menu from '../menu/Menu';
+import {
+	StyledHeader,
+	StyledHeaderInfo,
+	StyledHeaderLogo,
+	StyledHeaderName
+} from './styles';
 
 const Header = () => {
 	return (
-		<header>
-			<h1>Header</h1>
+		<StyledHeader>
+			<StyledHeaderInfo>
+				<StyledHeaderLogo>dv</StyledHeaderLogo>
+				<StyledHeaderName>daniel vega</StyledHeaderName>
+			</StyledHeaderInfo>
 			<Menu />
-		</header>
+		</StyledHeader>
 	);
 };
 

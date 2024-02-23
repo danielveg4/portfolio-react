@@ -35,7 +35,6 @@ const StyledSubtitleMain = styled.h3`
 const StyledSubcontainerMain = styled.div`
 	display: flex;
 	flex-direction: row;
-	gap: 5rem;
 	margin-top: 4rem;
 	gap: 14rem;
 	margin-bottom: 10rem;
@@ -49,6 +48,9 @@ const StyledTextMain = styled.div`
 	overflow: hidden;
 	transition: transform 0.3s;
 	object-fit: cover;
+	&:hover {
+        transform: scale(1.03);
+    }
 `;
 
 const StyledIMgContainerMain = styled.div`
@@ -59,13 +61,23 @@ const StyledIMgContainerMain = styled.div`
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
-	transition: transform 0.3s;
-	object-fit: cover;
+    transition: transform 0.3s;
+    object-fit: cover; 
+	&:hover {
+        transform: scale(1.03);
+    }
 `;
 
 const StyledImgMain = styled.img`
 	width: 310px;
 	height: 310px;
+	filter: drop-shadow(0 0 8px #2c2830) hue-rotate(320deg);
+	overflow: hidden;
+    transition: transform 0.3s;
+    object-fit: cover; 
+	&:hover {
+        filter: drop-shadow(0 0 10px #2c2830) hue-rotate(0deg);
+    }
 `;
 
 export {

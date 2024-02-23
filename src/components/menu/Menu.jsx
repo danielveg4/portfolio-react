@@ -1,23 +1,23 @@
-import { Link } from 'react-router-dom';
+import { StyledNav, StyledUl, StyledLi, StyledNavLink } from './styles';
 
 const Menu = () => {
 	return (
-		<nav>
-			<ul>
-				<li>
-					<Link to='/'>Home</Link>
-				</li>
-				<li>
-					<Link to='/projects'>Projects</Link>
-				</li>
-				<li>
-					<Link to='/about'>About</Link>
-				</li>
-				<li>
-					<Link to='/contact'>Contact</Link>
-				</li>
-			</ul>
-		</nav>
+		<StyledNav>
+			<StyledUl>
+				<StyledLi>
+					<StyledNavLink to='/'>Home</StyledNavLink>
+				</StyledLi>
+				<StyledLi>
+					<StyledNavLink to='/projects'>Projects</StyledNavLink>
+				</StyledLi>
+				<StyledLi>
+					<StyledNavLink to='/about'>About</StyledNavLink>
+				</StyledLi>
+				<StyledLi>
+					<StyledNavLink to='/contact'>Contact</StyledNavLink>
+				</StyledLi>
+			</StyledUl>
+		</StyledNav>
 	);
 };
 
