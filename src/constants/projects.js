@@ -18,6 +18,9 @@ const Reshipi = {
     live: "https://danielveg4.github.io/reshipi/",
     code: "https://github.com/danielveg4/recetas-cocina-reshipi",
     image: "assets/images/reshipi.jpg",
+    image2: "assets/images/reshipi2.png",
+    image3: "assets/images/reshipi3.png",
+    image4: "assets/images/reshipi4.png",
     active: false
 };
 
