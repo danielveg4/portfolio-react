@@ -1,14 +1,17 @@
+import { BrowserRouter } from 'react-router-dom';
 import Header from './components/header/Header';
-import Main from './components/main/Main';
 import { Global } from './global';
+import Router from './router/Router';
 
 const App = () => {
 	return (
-		<>
-			<Global />
-			<Header />
-			<Main />
-		</>
+		<BrowserRouter>
+			<>
+				<Global />
+				<Header />
+				<Router />
+			</>
+		</BrowserRouter>
 	);
 };
 

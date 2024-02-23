@@ -1,8 +1,23 @@
+import { Link } from 'react-router-dom';
+
 const Menu = () => {
 	return (
-		<div>
-			<h1>Menu del header</h1>
-		</div>
+		<nav>
+			<ul>
+				<li>
+					<Link to='/'>Home</Link>
+				</li>
+				<li>
+					<Link to='/projects'>Projects</Link>
+				</li>
+				<li>
+					<Link to='/about'>About</Link>
+				</li>
+				<li>
+					<Link to='/contact'>Contact</Link>
+				</li>
+			</ul>
+		</nav>
 	);
 };
 
