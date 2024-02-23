@@ -30,9 +30,9 @@ const SpaceTourism = {
     active: false
 };
 
-const Easybank = {
+const RestApiCountries = {
     id: v4(),
-    title: "Easybank",
+    title: "Rest API Countries",
     live: "https://danielveg4.github.io/clipboard_landing_page/",
     code: "https://github.com/danielveg4/clipboard_landing_page",
     image: "assets/images/easy1.png",
@@ -42,4 +42,4 @@ const Easybank = {
     active: false
 };
 
-export const PROJECTS = [Contracultura, Easybank, Reshipi, SpaceTourism];
+export const PROJECTS = [Contracultura, RestApiCountries, Reshipi, SpaceTourism];
