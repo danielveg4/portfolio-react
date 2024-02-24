@@ -71,3 +71,11 @@ export const StyledTextarea = styled.textarea`
         opacity: 0.6;
     }
 `;	
+
+export const StyledSpanErrors = styled.span`
+    color: var(--principal);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin: -0.7rem;
+`;

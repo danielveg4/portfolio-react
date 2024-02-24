@@ -3,7 +3,8 @@ import {
 	StyledInput,
 	StyledTextarea,
 	StyledForm,
-	StyledInputButton
+	StyledInputButton,
+	StyledSpanErrors
 } from './styles';
 
 const ContactForm = () => {
@@ -28,7 +29,9 @@ const ContactForm = () => {
 					}
 				})}
 			/>
-			{errors && errors.email && <span>{errors.email.message}</span>}
+			{errors && errors.email && (
+				<StyledSpanErrors>{errors.email.message}</StyledSpanErrors>
+			)}
 			<StyledTextarea
 				type='text'
 				id='text'
@@ -42,7 +45,9 @@ const ContactForm = () => {
 					}
 				})}
 			/>
-			{errors && errors.text && <span>{errors.text.message}</span>}
+			{errors && errors.text && (
+				<StyledSpanErrors>{errors.text.message}</StyledSpanErrors>
+			)}
 			<StyledInputButton type='submit' value='Submit' />
 		</StyledForm>
 	);
