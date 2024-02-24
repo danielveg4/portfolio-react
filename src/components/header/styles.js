@@ -46,7 +46,7 @@ const StyledHeader = styled.div`
     background-image: transparent;
     background-size: 400%;
     background-color: transparent;
-    max-width: 1440px;
+    max-width: 1340px;
     @media (max-width: 600px) {
         padding: 1.5rem 0.8rem;
         background: #dddddd;
