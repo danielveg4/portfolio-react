@@ -6,7 +6,6 @@ export const StyledForm = styled.form`
     align-items: center;
     gap: 1.5rem;
     margin-top: 3rem;
-
 `;
 
 export const StyledInput = styled.input`
@@ -30,6 +29,10 @@ export const StyledInput = styled.input`
         color: var(--principal);
         opacity: 0.6;
     }
+    @media (max-width: 600px) {
+        width: 220px;
+        font-size: 1rem;
+    }
 `;
 
 export const StyledInputButton = styled.input`
@@ -45,6 +48,10 @@ export const StyledInputButton = styled.input`
     &:hover {
         cursor: pointer;
         filter: drop-shadow(0 0 15px #2c2830) hue-rotate(320deg);
+    }
+    @media (max-width: 600px) {
+        width: 220px;
+        font-size: 1rem;
     }
 `;
 
@@ -70,6 +77,10 @@ export const StyledTextarea = styled.textarea`
         color: var(--principal);
         opacity: 0.6;
     }
+    @media (max-width: 600px) {
+        width: 220px;
+        font-size: 1rem;
+    }
 `;	
 
 export const StyledSpanErrors = styled.span`
@@ -78,4 +89,7 @@ export const StyledSpanErrors = styled.span`
     font-weight: 500;
     text-align: center;
     margin: -0.7rem;
+    @media (max-width: 600px) {
+        font-size: 1rem;
+    }
 `;

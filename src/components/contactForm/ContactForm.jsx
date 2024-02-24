@@ -11,11 +11,15 @@ const ContactForm = () => {
 	const {
 		handleSubmit,
 		register,
-		formState: { errors }
+		formState: { errors },
+		reset
 	} = useForm();
 
 	return (
-		<StyledForm onSubmit={handleSubmit(formSubmit)}>
+		<StyledForm
+			onSubmit={handleSubmit((data, event) => formSubmit(data, event, reset))}
+			action='/submit-form'
+		>
 			<StyledInput
 				type='email'
 				id='email'
@@ -53,8 +57,23 @@ const ContactForm = () => {
 	);
 };
 
-const formSubmit = data => {
-	console.log(data);
+const formSubmit = async (data, event, reset) => {
+	try {
+		const response = await fetch('/submit-form', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(data)
+		});
+		const responseData = await response.text();
+		console.log(responseData);
+		console.log(data);
+
+		reset();
+	} catch (error) {
+		console.error('Error al enviar datos del formulario:', error);
+	}
 };
 
 export default ContactForm;

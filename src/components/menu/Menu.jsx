@@ -1,9 +1,26 @@
-import { StyledNav, StyledUl, StyledLi, StyledNavLink } from './styles';
+import { useMenu } from '../../constants/useMenu';
+import {
+	StyledNav,
+	StyledUl,
+	StyledLi,
+	StyledNavLink,
+	StyledHamburger
+} from './styles';
 
 const Menu = () => {
+	const { showMenu, isMobile, menuIcon, toggleMenu } = useMenu();
+
 	return (
 		<StyledNav>
-			<StyledUl>
+			{isMobile && (
+				<StyledHamburger
+					src={`assets/images/${menuIcon}`}
+					alt='menu'
+					onClick={toggleMenu}
+					showMenu={showMenu}
+				/>
+			)}
+			<StyledUl showMenu={!isMobile || showMenu}>
 				<StyledLi>
 					<StyledNavLink to='/'>Home</StyledNavLink>
 				</StyledLi>

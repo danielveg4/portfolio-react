@@ -6,7 +6,11 @@ export const StyledContainer = styled.div`
 	margin-top: 9rem;
 	display: flex;
 	flex-direction: column;
-	height: 69vh;
+	padding-bottom: 8.2rem;
+	@media (max-width: 600px) {
+        margin: 1rem;
+		margin-top: 9rem;
+    }
 `;
 
 export const StyledTitle = styled.h2`
@@ -17,6 +21,9 @@ export const StyledTitle = styled.h2`
 	font-weight: 800;
 	display: flex;
 	justify-content: center;
+	@media (max-width: 600px) {
+        font-size: 2.5rem;
+    }
 `;
 
 export const StyledInfo = styled.div`
@@ -27,6 +34,14 @@ export const StyledInfo = styled.div`
 	padding-bottom: 5rem;
     justify-content: center;
     gap: 15rem;
+	@media (max-width: 600px) {
+        flex-direction: column;
+		padding: 0rem;
+		align-items: center;
+		gap: 3rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+    }
 `;
 
 export const StyledSocialMedia = styled.a`
@@ -37,5 +52,8 @@ export const StyledSocialMedia = styled.a`
     &:hover {
         cursor: pointer;
         filter: drop-shadow(0 0 15px #2c2830) hue-rotate(320deg);
+    }
+	@media (max-width: 600px) {
+        font-size: 1.3rem;
     }
 `;

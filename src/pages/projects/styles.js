@@ -11,6 +11,12 @@ export const StyledContainer = styled.div`
     justify-content: center;
     display: flex;
     flex-direction: column;
+    @media (max-width: 600px) {
+        padding: 1rem;
+        padding-top: 5rem;
+        margin: 1rem;
+        margin-top: 9rem;
+    }
 `;
 
 export const StyledImgContainer = styled.div`
@@ -32,6 +38,9 @@ export const StyledImgVertical = styled.img`
         transform: scale(1.20);
         opacity: 1;
     }
+    @media (max-width: 600px) {
+        display: none;
+    }
 `;
 
 export const StyledImgVertical2 = styled.img`
@@ -47,6 +56,9 @@ export const StyledImgVertical2 = styled.img`
         transform: scale(1.20);
         opacity: 1;
     }
+    @media (max-width: 600px) {
+        display: none;
+    }    
 `;
 
 export const StyledImgHorizontal = styled.img`
@@ -62,6 +74,18 @@ export const StyledImgHorizontal = styled.img`
         transform: scale(1.20);
         opacity: 1;
     }
+    @media (max-width: 600px) {
+        position: relative;
+        margin: auto;
+        top: -25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+    
 `;
 
 export const StyledImgPrincipal = styled.img`
@@ -75,6 +99,9 @@ export const StyledImgPrincipal = styled.img`
         transform: scale(1.20);
         opacity: 1;
     }
+    @media (max-width: 600px) {
+        display: none;
+    }
 `;
 
 export const StyledTextContainer = styled.div`
@@ -85,6 +112,13 @@ export const StyledTextContainer = styled.div`
     width: 250px;
     margin-right: -6rem;
     margin-left: 3rem;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -3rem;
+        text-align: center;
+    }
 `;
 
 export const StyledProjectContainer = styled.div`
@@ -93,7 +127,14 @@ export const StyledProjectContainer = styled.div`
     gap: 2rem;
     margin-left: 11rem;
     margin-bottom: 12rem;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
 `;
+
+
 
 export const StyledTextTitle = styled.h3`
     font-size: 1.4rem;
@@ -114,5 +155,8 @@ export const StyledTextLink = styled.a`
     &:hover {
         cursor: pointer;
         filter: drop-shadow(0 0 15px #2c2830) hue-rotate(320deg);
+    }
+    @media (max-width: 600px) {
+        font-size: 1rem;
     }
 `;

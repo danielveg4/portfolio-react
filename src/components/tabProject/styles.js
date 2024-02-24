@@ -5,6 +5,15 @@ export const StyledTabContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
+    @media (max-width: 600px) {
+        gap: 1rem;
+        margin-top: -3rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
 `;
 
 export const StyledNavLink = styled.div`
@@ -15,6 +24,16 @@ export const StyledNavLink = styled.div`
     font-size: 1.1rem;
     line-height: 1rem;
     font-weight: 500;
+    @media (max-width: 600px) {
+        padding: 0.4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     &:hover {
         cursor: pointer;

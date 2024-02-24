@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Menu from '../menu/Menu';
 import {
 	StyledHeader,
@@ -10,7 +11,9 @@ const Header = () => {
 	return (
 		<StyledHeader>
 			<StyledHeaderInfo>
-				<StyledHeaderLogo>dv</StyledHeaderLogo>
+				<NavLink to='/'>
+					<StyledHeaderLogo>dv</StyledHeaderLogo>
+				</NavLink>
 				<StyledHeaderName>daniel vega</StyledHeaderName>
 			</StyledHeaderInfo>
 			<Menu />
