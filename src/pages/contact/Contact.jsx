@@ -1,3 +1,4 @@
+import ContactForm from '../../components/contactForm/ContactForm';
 import { contactUser } from '../../constants/mainInfo';
 import {
 	StyledContainer,
@@ -17,6 +18,7 @@ const Contact = () => {
 				</StyledSocialMedia>
 				<StyledSocialMedia href={contactUser.mail}>mail</StyledSocialMedia>
 			</StyledInfo>
+			<ContactForm />
 		</StyledContainer>
 	);
 };

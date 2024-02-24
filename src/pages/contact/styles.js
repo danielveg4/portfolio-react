@@ -11,7 +11,7 @@ export const StyledContainer = styled.div`
 
 export const StyledTitle = styled.h2`
 	color: var(--principal);
-	margin-top: 9.5rem;
+	margin-top: 7rem;
 	font-size: 3.5rem;
 	text-decoration: none;
 	font-weight: 800;
@@ -23,6 +23,8 @@ export const StyledInfo = styled.div`
 	display: flex;
 	flex-direction: row;
     padding: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
     justify-content: center;
     gap: 15rem;
 `;
