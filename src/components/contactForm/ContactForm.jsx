@@ -24,7 +24,7 @@ const ContactForm = () => {
 				{...register('email', {
 					required: 'El email es requerido',
 					pattern: {
-						value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+						value: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
 						message: 'El email no es válido'
 					}
 				})}
