@@ -28,9 +28,9 @@ export const StyledImgContainer = styled.div`
 export const StyledImgVertical = styled.img`
     width: 358px;
     height: 164px;
-    position: fixed;
-    top: 710px;
-    left: 750px;
+    position: relative;
+    top: -215px;
+    left: 380px;
     z-index: 1;
     opacity: 0.9;
     transition: transform 0.3s, opacity 0.3s; 
@@ -46,9 +46,9 @@ export const StyledImgVertical = styled.img`
 export const StyledImgVertical2 = styled.img`
     width: 358px;
     height: 164px;
-    position: fixed;
-    top: 710px;
-    left: 340px;
+    position: relative;
+    top: -380px;
+    left: -40px;
     z-index: 1;
     opacity: 0.9;
     transition: transform 0.3s, opacity 0.3s; 
@@ -64,9 +64,9 @@ export const StyledImgVertical2 = styled.img`
 export const StyledImgHorizontal = styled.img`
     width: 156px;
     height: 276px;
-    position: fixed;
-    top: 450px;
-    left: 120px;
+    position: relative;
+    top: -200px;
+    left: -250px;
     z-index: 1;
     opacity: 0.9;
     transition: transform 0.3s, opacity 0.3s; 
