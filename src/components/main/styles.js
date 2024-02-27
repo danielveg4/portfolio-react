@@ -62,7 +62,7 @@ const StyledTextMain = styled.div`
 	padding: 2rem;
 	margin-bottom: 1rem;
 	font-size: 1.1rem;
-	width: 310px;
+	width: 330px;
 	overflow: hidden;
 	transition: transform 0.3s;
 	object-fit: cover;
@@ -79,8 +79,8 @@ const StyledTextMain = styled.div`
 
 const StyledIMgContainerMain = styled.div`
 	border: 1.5px solid #2c2830;
-	width: 305px;
-	height: 305px;
+	width: 320px;
+	height: 320px;
 	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
@@ -97,8 +97,8 @@ const StyledIMgContainerMain = styled.div`
 `;
 
 const StyledImgMain = styled.img`
-	width: 305px;
-	height: 305px;
+	width: 320px;
+	height: 320px;
 	filter: drop-shadow(0 0 8px #2c2830) grayscale(90%);
 	overflow: hidden;
     transition: transform 0.4s;

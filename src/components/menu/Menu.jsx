@@ -10,6 +10,12 @@ import {
 const Menu = () => {
 	const { showMenu, isMobile, menuIcon, toggleMenu } = useMenu();
 
+	const handleLinkClick = () => {
+		if (isMobile) {
+			toggleMenu();
+		}
+	};
+
 	return (
 		<StyledNav>
 			{isMobile && (
@@ -22,16 +28,24 @@ const Menu = () => {
 			)}
 			<StyledUl showMenu={!isMobile || showMenu}>
 				<StyledLi>
-					<StyledNavLink to='/'>Home</StyledNavLink>
+					<StyledNavLink to='/' onClick={handleLinkClick}>
+						Home
+					</StyledNavLink>
 				</StyledLi>
 				<StyledLi>
-					<StyledNavLink to='/projects'>Projects</StyledNavLink>
+					<StyledNavLink to='/projects' onClick={handleLinkClick}>
+						Projects
+					</StyledNavLink>
 				</StyledLi>
 				<StyledLi>
-					<StyledNavLink to='/about'>About</StyledNavLink>
+					<StyledNavLink to='/about' onClick={handleLinkClick}>
+						About
+					</StyledNavLink>
 				</StyledLi>
 				<StyledLi>
-					<StyledNavLink to='/contact'>Contact</StyledNavLink>
+					<StyledNavLink to='/contact' onClick={handleLinkClick}>
+						Contact
+					</StyledNavLink>
 				</StyledLi>
 			</StyledUl>
 		</StyledNav>
