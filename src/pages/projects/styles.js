@@ -126,7 +126,7 @@ export const StyledProjectContainer = styled.div`
     flex-direction: row;
     gap: 2rem;
     margin-left: 11rem;
-    margin-bottom: 12rem;
+    margin-bottom: -26rem;
     @media (max-width: 600px) {
         flex-direction: column;
         margin-left: 0;

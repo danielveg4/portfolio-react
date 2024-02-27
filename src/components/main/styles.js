@@ -99,12 +99,12 @@ const StyledIMgContainerMain = styled.div`
 const StyledImgMain = styled.img`
 	width: 305px;
 	height: 305px;
-	filter: drop-shadow(0 0 8px #2c2830) hue-rotate(320deg);
+	filter: drop-shadow(0 0 8px #2c2830) grayscale(90%);
 	overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.4s;
     object-fit: cover; 
 	&:hover {
-        filter: drop-shadow(0 0 10px #2c2830) hue-rotate(0deg);
+        filter: drop-shadow(0 0 10px #2c2830) grayscale(30%);
     }
 	@media (max-width: 600px) {
 		width: 240px;
