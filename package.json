@@ -1,6 +1,7 @@
 {
 	"name": "first-project",
 	"version": "0.0.0",
+	"homepage": "http://danielvegaalmeida.com/",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
